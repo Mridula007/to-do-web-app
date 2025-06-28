@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>📝 To-Do List App</title>
+  <title>📝 To-Do List + Meeting Reminder</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,6 +14,14 @@
     <button onclick="addTask()">Add Task</button>
 
     <ul id="taskList"></ul>
+  </div>
+
+  <div class="container">
+    <h1>📅 Meeting Reminder</h1>
+
+    <label>Select Meeting Date & Time:</label><br>
+    <input type="datetime-local" id="meetingTime">
+    <button onclick="setReminder()">Set Reminder</button>
   </div>
 
   <script src="script.js"></script>
